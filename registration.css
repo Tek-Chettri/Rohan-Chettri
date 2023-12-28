@@ -7,8 +7,8 @@ body {
 }
 
 .left-division {
-    flex: 1;
-    background-color: #cbd4cb; /* Green background color */
+    flex: 0.5;
+    background-color: #eff1efd2; /* Green background color */
     color: white;
     padding: -1%;
     box-sizing: border-box;
@@ -18,9 +18,10 @@ body {
 }
 
 .logo {
-    width: 100px; /* Adjust the width as needed */
-    height: auto;
-    margin-bottom: 10px;
+    width: 40%; /* Adjust the width as needed */
+    height: 10%;
+    padding-top: 60px;
+    padding-left: 50px;
 }
 
 .free-account {
@@ -28,7 +29,7 @@ body {
     margin-bottom: 10px;
     padding-top: 20%;
     color: black;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     padding-left: 80px;
 }
@@ -46,13 +47,13 @@ body {
     margin-top: 20px;
     color: black;
     padding-top: 30px;
-    font-size: 30px;
+    font-size: 20px;
     padding-bottom: 80px;
 }
 
 .right-division {
     flex: 1;
-    background-color: #f4eeed; /* Red background color */
+    background-color:#eff1efd2; /* Red background color */
     color: white;
     padding: 30px;
     box-sizing: border-box;
@@ -63,7 +64,7 @@ body {
 }
 
 .registration-form {
-    margin-top: 30%;
+    margin-top: 10%;
     max-width: 400px;
     width: 100%;
     background-color: lightgray; /* Light gray background color for the form */
@@ -71,4 +72,30 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     align-self: center; /* Center the form within its container */
+}
+.Button{
+    padding-left: 40%;
+}
+.login-link {
+    margin-top: 20px;
+    text-align: center;
+    color: #666; /* You can adjust the color as needed */
+}
+
+.login-link a {
+    color: #1a06f5; /* You can adjust the color as needed */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+   .logo
+
+    .registration-form {
+        margin-top: 10%;
+    }
 }
