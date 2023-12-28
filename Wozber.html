@@ -5,114 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Bar</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        header {
-            background-color: #e5e5ec;
-            padding: 10px;
-            color: rgb(13, 13, 13);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .logo {
-            height: 40px;
-            width: auto;
-            margin-right: 10px;
-            padding-right: 50px;
-        }
-
-        nav {
-            display: flex;
-            flex: 1;
-            justify-content: center;
-        }
-
-        nav a {
-            color: rgb(18, 18, 18);
-            text-decoration: underline;
-            margin: 0 15px;
-        }
-
-        .login-container {
-            display: flex;
-            align-items: center;
-        }
-
-        .login-button,
-        .create-resume-button {
-            background-color: #1a06f5;
-            color: #efeef3;
-            border: none;
-            padding: 8px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-
-        .country-selector {
-            font-size: 24px;
-            cursor: pointer;
-            border: none;
-            background-color: transparent;
-            color: white;
-            margin-right: 10px;
-            position: relative;
-        }
-
-        .flag-dropdown {
-            position: absolute;
-            top: 40px;
-            left: 0;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 10px;
-            display: none;
-            z-index: 1;
-        }
-
-        .flag-option {
-            display: flex;
-            align-items: center;
-            margin-bottom: 5px;
-            color: black;
-            cursor: pointer;
-        }
-
-        .flag-option img {
-            margin-right: 10px;
-        }
-
-        .main-section {
-            display: flex;
-            justify-content: space-between;
-            margin: 20px;
-        }
-
-        .left-section {
-            width: 45%;
-        }
-
-        .right-section {
-            width: 45%;
-            text-align: center;
-        }
-
-        .resume-animation {
-            /* Placeholder for the running animation */
-            height: 300px;
-            background-color: lightgray;
-            margin-top: 20px;
-        }
-    </style>
+    <title>Wozber.com</title>
+    <link rel="stylesheet" href="Wozber.css">
 </head>
 
 <body>
@@ -145,8 +39,8 @@
 
     <div class="main-section">
         <div class="left-section">
-            <h1 style="font-size: 36px; font-weight: bold; margin-bottom: 10px;">Free Resume Builder For Modern Job Seekers</h1>
-            <p style="font-size: 18px;">By employing the best practices and innovative tech, Wozber boosts your chances of landing a better job - completely for free.</p>
+            <h1 class="free-Resume">Free Resume Builder <br> For Modern Job Seekers</h1>
+            <p class="body-content">By employing the best practices and <br> innovative tech, Wozber boosts your chances <br> of landing a better job - completely for free.</p>
             <button style="background-color: #1a06f5; color: #efeef3; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; margin-top: 10px;">Build Resume</button>
             <p>No registration required.</p>
         </div>
