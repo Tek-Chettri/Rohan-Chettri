@@ -156,3 +156,99 @@ nav a {
     display: inline-block;
     
 }
+.template-section {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.template-section h2 {
+    font-size: 30px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-left: 10%;
+}
+
+.view-all-link {
+    color: #1a06f5;
+    text-decoration:underline;
+    margin-bottom: 10px;
+    display:inline-block;
+    font-weight: bold;
+    text-align:left;
+    padding-left: 90%;
+    padding-bottom: 5%;
+}
+
+.template-preview-section {
+    display: flex;
+    overflow-x: auto;
+    justify-content: center;
+}
+
+.template-preview {
+    width: 400px;
+    height: 500px;
+    background-image: url(1-xlg-x1.webp);
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10%;
+}
+.image-size{
+    width: 350px;
+    height:400px;
+    
+}
+.preview-button {
+    position: absolute;
+    bottom: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+/*.resume-animation {
+    position: absolute;
+    top: 8%;
+    left: 55%;
+    width: 10%;
+    height: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    overflow: hidden;
+    background-color:rgb(201, 132, 132);
+}*/
+/*
+video {
+    width: 200%;
+    height: 500%;
+    object-fit:cover;
+    align-items: center;
+    
+}*/
+.resume-animation {
+    position: absolute;
+    top: 8%;
+    left: 55%;
+    width: 10%;
+    height: 10%;
+    padding: 10%;
+    overflow: hidden;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+video {
+    width: 600%;
+    height: 600%;
+
+    object-fit: cover;
+}
