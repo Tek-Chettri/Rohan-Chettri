@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wozber.com Template Preview</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #e5e5ec;
+            padding: 10px;
+            color: rgb(13, 13, 13);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            height: 40px;
+            width: auto;
+            margin-right: 10px;
+            padding-right: 50px;
+        }
+
+        nav {
+            display: flex;
+            flex: 1;
+            justify-content: center;
+        }
+
+        nav a {
+            color: rgb(18, 18, 18);
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .login-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .login-button,
+        .create-resume-button {
+            background-color: #1a06f5;
+            color: #efeef3;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .country-selector {
+            font-size: 24px;
+            cursor: pointer;
+            border: none;
+            background-color: transparent;
+            color: white;
+            margin-right: 10px;
+            position: relative;
+        }
+
+        .flag-dropdown {
+            position: absolute;
+            top: 40px;
+            left: 0;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            display: none;
+            z-index: 1;
+        }
+
+        .flag-option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+            color: black;
+            cursor: pointer;
+        }
+
+        .flag-option img {
+            margin-right: 10px;
+        }
+
+        .template-preview {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .template-section {
+            margin-bottom: 30px;
+        }
+
+        .template-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .template-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+        }
+        .template-options {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .template-option {
+            display: inline-block;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        .template-option:hover {
+            text-decoration: underline;
+        }
+        .free-templates-section {
+            text-align: center;
+            margin: 30px;
+            font-size: 30px;
+            
+        }
+
+        .free-templates-section h2 {
+            color: #090909;
+            font-size: 50px;
+        }
+
+        .free-templates-section p {
+            color: rgb(18, 18, 18);
+        }*/
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="wozber-logo (1).png" alt="wozber" style="height: 40px; width: auto;">
+        </div>
+        <nav>
+            <a href="#">Resume Builder</a>
+            <a href="#">Templates</a>
+            <a href="#">Examples</a>
+            <a href="#">ATS Resume Scanner</a>
+            <a href="#">Services</a>
+            <a href="#">Magazine</a>
+        </nav>
+        <div class="login-container">
+            <a href="login.html" class="login-button">Login</a>
+            <button class="create-resume-button">Create Resume</button>
+            <div class="country-selector">
+                🌐
+                <div class="flag-dropdown">
+                    <div class="flag-option" onclick="selectCountry('India', 'flag.png')">India</div>
+                    <div class="flag-option" onclick="selectCountry('united State', 'united-states.png')">United state</div>
+                    <!-- Add more flag options as needed -->
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="template-options">
+        <div class="template-option">Professional</div>
+        <div class="template-option">Modern</div>
+        <div class="template-option">Creative</div>
+        <div class="template-option">ATS-Friendly</div>
+    </div>
+    <section class="free-templates-section">
+        <h2>Free Resume Templates</h2>
+        <p>Wozber has got you covered with all the necessary tools to build a perfect resume – <br>entirely for free. To begin, choose a resume template design that suits you best: <br> from a professional and ATS-friendly to a more modern or creative one. You will <br> be able to select a different template and customize its style even when you <br> have your content filled in, so don't sweat too much here and start with any <br> design you like.</p>
+    </section>
+
+    <div class="container template-preview">
+        <div class="template-section">
+            <h2 class="template-title">Professional Templates</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="first.png" alt="Professional Template 1" class="template-image">
+                </div>
+                <div class="col-md-3">
+                    <img src="Second.png" alt="Professional Template 2" class="template-image">
+                </div>
+                <div class="col-md-3">
+                    <img src="third.png" alt="Professional Template 3" class="template-image">
+                </div>
+                <div class="col-md-3">
+                    <img src="Fourth.png" alt="Professional Template 4" class="template-image">
+                </div>
+                <div class="col-md-3">
+                    <img src="fifth.png" alt="Professional Template 5" class="template-image">
+                </div>
+                <div class="col-md-3">
+                    <img src="six.png" alt="Professional Template 6" class="template-image">
+                </div>
+                <div class="col-md-3">
+                    <img src="Seven.png" alt="Professional Template 7" class="template-image">
+                </div>
+                <div class="col-md-3">
+                    <img src="Eight.png" alt="Professional Template 8" class="template-image">
+                </div>
+            </div>
+        </div>
+
+        <div class="template-section">
+            <h2 class="template-title">Modern Templates</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="modern_template_1.jpg" alt="Modern Template 1" class="template-image">
+                </div>
+                <div class="col-md-3">
+                    <img src="modern_template_2.jpg" alt="Modern Template 2" class="template-image">
+                </div>
+                <div class="col-md-3">
+                    <img src="modern_template_3.jpg" alt="Modern Template 3" class="template-image">
+                </div>
+                <div class="col-md-3">
+                    <img src="modern_template_4.jpg" alt="Modern Template 4" class="template-image">
+                </div>
+                <div class="col-md-3">
+                    <img src="modern_template_5.jpg" alt="Modern Template 5" class="template-image">
+                </div>
+                <div class="col-md-3">
+                    <img src="modern_template_6.jpg" alt="Modern Template 6" class="template-image">
+                </div>
+                <div class="col-md-3">
+                    <img src="modern_template_7.jpg" alt="Modern Template 7" class="template-image">
+                </div>
+                <div class="col-md-3">
+                    <img src="modern_template_8.jpg" alt="Modern Template 8" class="template-image">
+                </div>
+            </div>
+        </div>
+
+        <div class="template-section">
+            <h2 class="template-title">Creative Templates</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="creative_template_1.jpg" alt="Creative Template 1" class="template-image">
+                </div>
+                <div class="col-md-3">
+                    <img src="creative_template_2.jpg" alt="Creative Template 2" class="template-image">
+                </div>
+                <div class="col-md-3">
+                    <img src="creative_template_3.jpg" alt="Creative Template 3" class="template-image">
+                </div>
+                <div class="col-md-3">
+                    <img src="creative_template_4.jpg" alt="Creative Template 4" class="template-image">
+                </div>
+                <div class="col-md-3">
+                    <img src="creative_template_5.jpg" alt="Creative Template 5" class="template-image">
+                </div>
+                <div class="col-md-3">
+                    <img src="creative_template_6.jpg" alt="Creative Template 6" class="template-image">
+                </div>
+                <div class="col-md-3">
+                    <img src="creative_template_7.jpg" alt="Creative Template 7" class="template-image">
+                </div>
+                <div class="col-md-3">
+                    <img src="creative_template_8.jpg" alt="Creative Template 8" class="template-image">
+                </div>
+            </div>
+        </div>
+
+        <div class="template-section">
+            <h2 class="template-title">ATS-Friendly Templates</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="ats_friendly_template_1.jpg" alt="ATS-Friendly Template 1" class="template-image">
+                </div>
+                <div class="col-md-3">
+                    <img src="ats_friendly_template_2.jpg" alt="ATS-Friendly Template 2" class="template-image">
+                </div>
+                <div class="col-md-3">
+                    <img src="ats_friendly_template_3.jpg" alt="ATS-Friendly Template 3" class="template-image">
+                </div>
+                <div class="col-md-3">
+                    <img src="ats_friendly_template_4.jpg" alt="ATS-Friendly Template 4" class="template-image">
+                </div>
+                <div class="col-md-3">
+                    <img src="ats_friendly_template_5.jpg" alt="ATS-Friendly Template 5" class="template-image">
+                </div>
+                <div class="col-md-3">
+                    <img src="ats_friendly_template_6.jpg" alt="ATS-Friendly Template 6" class="template-image">
+                </div>
+                <div class="col-md-3">
+                    <img src="ats_friendly_template_7.jpg" alt="ATS-Friendly Template 7" class="template-image">
+                </div>
+                <div class="col-md-3">
+                    <img src="ats_friendly_template_8.jpg" alt="ATS-Friendly Template 8" class="template-image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
