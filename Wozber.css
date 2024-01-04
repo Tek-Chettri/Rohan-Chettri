@@ -267,10 +267,11 @@ video {
       }
       /* Add these styles to your existing CSS */
 
-.build-resume-section {
+.build_resume_section {
     display: flex;
     justify-content: space-between;
-    margin: 50px;
+    margin: 60px;
+    margin-bottom: 20%;
     
 }
 
@@ -330,7 +331,6 @@ video {
     /* Add the desired animation and transition properties */
 }
 .build-resume-section {
-    background-color: black;
     color: white;
     padding: 50px;
     text-align: center;
@@ -338,24 +338,27 @@ video {
 
 /* Flex container for the rows */
 .row {
-    display: flex;
+    display:flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Adjust the gap between columns */
+    gap: 30px; 
+    padding-top: 10%;
+    /* Adjust the gap between columns */
 }
 
 /* Style for each column */
 .col-md-4 {
     flex: 0 0 calc(33.333333% - 20px); /* Adjust the width and gap */
     max-width: calc(33.333333% - 20px);
-    box-sizing: border-box;
+    box-sizing:border-box;
+    
 }
 
 /* Additional styling for feature boxes */
 .feature {
-    text-align: left;
-    padding: 20px;
-    border: 1px solid white;
+    text-align:center;
+    padding-top: 10%;
+    border: 1px solid rgb(14, 13, 13);
     border-radius: 8px;
 }
 
@@ -363,6 +366,154 @@ video {
     max-width: 100%;
     height: auto;
 }
+
+
+.Build {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 100%;
+    margin-left: 10%;
+
+    }
+    /* Start wozber service section in home page*/
+    .wozber-services-section {
+        background-color: white;
+        color: black;
+        padding: 50px;
+        text-align: center;
+        font-size: 20px;
+        padding-top: 8%;
+    }
+    
+    /* from here Animation of resume code css is done here*/
+    .paid-service-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color:rgb(245, 132, 66); /* Orange */
+        color: rgb(248, 244, 244);
+        padding: 50px;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: center;
+        
+    }
+
+    .left-content {
+        flex: 1;
+        text-align: left;
+        max-width: 600px; /* Adjust as needed */
+    }
+
+    .left-content button {
+        font-weight: bold;
+        color: rgb(254, 249, 249);
+        background-color: #101010; /* Light Orange */
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .left-content p {
+        margin: 15px 0;
+    }
+
+    .left-content ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: left;
+        color: black;
+    }
+
+    .left-content li::before {
+        content: "\2022"; /* Unicode character for bullet point */
+        color: black;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+
+    .image-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-container img {
+        max-width: 100%; /* Make the image responsive */
+        height: auto;
+    }
+
+    .custom{
+        font-size:40px;
+        font-weight: bold;
+        color: black;
+    }
+    .content{
+        font-size: 20px;
+        color: black;
+        opacity: 60%;
+    }
+    /* paid service section with background colour gray*/
+    .paid-service-section-gray {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color:rgb(226, 221, 216); /* Orange */
+        color: rgb(18, 18, 18);
+        padding: 50px;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: center
+    }
+
+    .left-content-gray {
+        flex: 1;
+        text-align: left;
+        max-width: 400px;
+    }
+
+    .left-content-gray button {
+        font-weight: bold;
+        color: white;
+        background-color: #0b0b0b; /* Dark Gray */
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .left-content-gray p {
+        font-size: 18px;
+        margin: 20px 0;
+        
+    }
+
+    .left-content-gray ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: left;
+    }
+
+    .left-content-gray li::before {
+        content: "\2022";
+        color: rgb(12, 12, 12);
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+
+    .images-container {
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+        
+    }
 
 
 @media only screen and (max-width: 600px){
@@ -396,7 +547,7 @@ video {
       }
       .Navigator{
         display: inline-flex;
-        font-size: 25px;
+        font-size: 30px;
       }
       .resume-animation {
         position: absolute;
