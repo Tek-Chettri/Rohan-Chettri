@@ -514,6 +514,55 @@ video {
         overflow: hidden;
         
     }
+    
+        /* Question and answer section start */
+        .another-section {
+            text-align: center;
+            padding: 30px;
+            background-color:white; /* Light Gray */
+        }
+
+        .another-section p {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+         /* Question answer part */
+         .faq-section {
+            background-color: white;
+            padding: 30px;
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .faq-section h2 {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .faq-section .faq-item {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 2px solid #ccc;
+            padding: 10% 0;
+            text-align: left;
+        }
+
+        .faq-section .question {
+            font-weight: bold;
+            font-size: 20px;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            margin-right: 20%;
+            flex: 5;
+        }
+
+        .faq-section .answer {
+            flex: 6;
+        }
+
 
 
 @media only screen and (max-width: 600px){
