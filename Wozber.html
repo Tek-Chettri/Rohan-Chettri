@@ -34,7 +34,17 @@
         </div>
         <div class="login-container">
             <a href="login.html" class="login-button">Login</a>
-            <button class="create-resume-button" onclick="https://www.wozber.com/en-us/app/versions/" >Create Resume</button>
+            <button class="create-resume-button" id="resumeButton"  >Create Resume</button>
+            <script src="script.js">
+                function buildResume() {
+    // Redirect to the resume building page
+    window.location.href = "https://www.wozber.com/en-us/app/versions/";
+}
+
+// Add an event listener to the button
+document.getElementById("resumeButton").addEventListener("click", buildResume);
+            </script>
+            
             <div class="country-selector">
                 🌐
                 <div class="flag-dropdown">
