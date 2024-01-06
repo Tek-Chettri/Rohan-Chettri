@@ -562,7 +562,166 @@ video {
         .faq-section .answer {
             flex: 6;
         }
+        
+        
+      /* from here wozber member Css start */
+      .wozber_member{
+        font-weight: bold;
+        padding-left: 10%;
+        padding-top: 5%;
+      }
+      .victory{
+        padding-left: 80%;
+        width: 5%;
+        height: 10%;
+        animation: 1s ;
+      }
+      .victory {
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        animation: moveleft 1s forwards;
+    }
 
+    @keyframes moveleft {
+        0%, 100% {
+            transform: translateX(0);
+        }
+
+        25%, 75% {
+            transform: translateX(-5px);
+        }
+
+        50% {
+            transform: translateX(5px);
+        }
+    }
+    .testimonials-section {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+
+    .testimonial {
+        text-align: center;
+        padding-left: 5%;
+    }
+
+    .passport-image {
+        width: 200px; /* Adjust size as needed */
+        height: 200px; /* Adjust size as needed */
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+    .Market{
+        padding-bottom: 5%;
+     color: #a29f9f;
+    }
+    .bio{
+        text-align: left;
+    }
+    /*Marzine CSS start*/
+    /* Container styling */
+.card-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+/* Individual card styling */
+.card {
+    width: 400px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Styling for image space */
+.image-space img {
+    height: 200px;
+    width: 300px;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 10px; /* Add space between image and text */
+}
+
+/* Additional styling for h2 and p elements */
+ .p {
+    margin: 5px 0;
+    text-align: left;
+}
+/* Styling for the date to be on the right side */
+.card .text-space p:last-child {
+    text-align: right;
+}
+/* marqee section start*/
+ /* Style for the outer black background division */
+ .outer-division {
+    background-color: black;
+    color: white;
+    position: relative;
+    height: 300px; 
+    margin-bottom: 20%;/* Adjust the height as needed */
+}
+
+
+
+/* Style for the inner red background division */
+.inner-division {
+    background-color:transparent;
+    padding: 20px;
+    padding-top: 20%;
+    border-radius: 10px; /* Adjust the border radius as needed */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Set the z-index to bring it to the foreground */
+    text-align: center; /* Center the text */
+}
+
+/* Style for the "Build Resume" button */
+.build-resume-button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Style for the additional text */
+.additional-text {
+    color: #808080; /* Gray color for the additional text */
+    margin-top: 10px; /* Adjust the margin as needed */
+}
+/* footer contain*/
+ /* Styles for the footer */
+ footer {
+    background-color:rgb(238, 234, 234);
+    color: rgb(210, 201, 201);
+    text-align: center;
+    padding: 20px 0;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-item {
+    margin: 0 20px;
+}
+a{
+    text-decoration: none;
+    
+}
 
 
 @media only screen and (max-width: 600px){
