@@ -13,6 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Check connection
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
+        echo("<h1>Connection error</h1>");
     }
 
     // Retrieve form data
@@ -22,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Add additional fields as needed
 
     // SQL query to insert data into the Wozber_login table
-    $sql = "INSERT INTO Wozber_login (Name, Email_Id, Password) VALUES ('$firstName', '$email', '$password')";
+    $sql = "INSERT INTO Wozber_login (Name,Email_Id, Password) VALUES ('$firstName', '$email', '$password')";
 
     if ($conn->query($sql) === TRUE) {
         echo "Registration successful!";
