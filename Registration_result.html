@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <!-- Adding Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Registration Results</h2>
+
+        <div id="registrationResults"></div>
+
+        <!-- Adding Bootstrap JS and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+        <script>
+            // Function to fetch and display registration results
+            function fetchRegistrationResults() {
+                $.ajax({
+                    type: "GET",
+                    url: "Registration_Result.Php", // Change to the actual path of your PHP script
+                    success: function (data) {
+                        $("#registrationResults").html(data);
+                    },
+                    error: function () {
+                        $("#registrationResults").html("Error fetching registration results.");
+                    }
+                });
+            }
+
+            // Initial fetch on page load
+            fetchRegistrationResults();
+            
+            // Fetch results every 30 seconds (adjust as needed)
+            setInterval(fetchRegistrationResults, 30000);
+        </script>
+    </div>
+</body>
+
+</html>
