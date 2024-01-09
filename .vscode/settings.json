@@ -1,0 +1,19 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 80,
+            "driver": "MySQL",
+            "name": "Wozber",
+            "group": "Wozber",
+            "database": "Wozber",
+            "username": "Rohan",
+            "connectionTimeout": 1
+        }
+    ]
+}
